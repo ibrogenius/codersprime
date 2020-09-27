@@ -1,0 +1,14 @@
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading h1 {
+    color: whitesmoke;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
