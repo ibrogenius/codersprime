@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '3*@)28(vkhex+8=#oryb7(kw-x95unk&#gxruv$3rt2c0mf)m_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['codersprime-cli.herokuapp.com', '127.0.0.1']
 
@@ -121,7 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# STATICFILES_DIRS = BASE_DIR / 'static'
 
 STATIC_URL = '/static/'
 
