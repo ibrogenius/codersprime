@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '3*@)28(vkhex+8=#oryb7(kw-x95unk&#gxruv$3rt2c0mf)m_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['codersprime-cli.herokuapp.com', '127.0.0.1']
 
