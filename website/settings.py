@@ -7,7 +7,6 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.1/topics/settings/
 
 For the full list of settings and their values, see
-https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
@@ -25,7 +24,7 @@ SECRET_KEY = '3*@)28(vkhex+8=#oryb7(kw-x95unk&#gxruv$3rt2c0mf)m_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['codersprime.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []#'codersprime.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -120,7 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATIC_URL = '/static/'
 
