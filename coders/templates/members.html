@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Members{% endblock %}
+
+{% block content %}
+
+<div class="div">
+<h1>Pioneers</h1>
+<hr>
+    {% for staff in pion %}
+    <div class="column">
+        <div class="card">
+            <img src="{{ staff.image.url }}" alt="images" style="width:100%">
+            <div class="container">
+                <h2>{{ staff.name }}</h2>
+                <p><b>{{ staff.title }}</b></p>
+                <p>{{ staff.about }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {% endfor %}
+
+<div class="div1">
+<h1>Members</h1>
+<hr>
+    {% for peep in mem %}
+    <div class="column">
+        <div class="card">
+            <img src="{{ peep.image_mem.url }}" alt="images" style="width:100%">
+            <div class="container">
+                <h2>{{ peep.name_mem }}</h2>
+                <p><b>{{ peep.title_mem }}</b></p>
+                <p>{{ peep.about_mem }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
